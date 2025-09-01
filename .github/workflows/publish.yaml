@@ -137,6 +137,7 @@ jobs:
         with:
           image: ${{ env.IMAGE_NAME }}
           tag: ${{ github.ref_name }}
+          make-target: package
 
           public-registry: ${{ env.PUBLIC_REGISTRY }}
           public-repo: ${{ env.REPO }}
