@@ -110,11 +110,11 @@ jobs:
     name: Publish prometheus-federator image
     runs-on: ubuntu-latest
     continue-on-error: true
-    needs: [
-      ci,
-      integration,
-      e2e,
-    ]
+    # needs: [
+    #   ci,
+    #   integration,
+    #   e2e,
+    # ]
     permissions:
       contents : read
       id-token: write
